@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/rofrol/scrape/issues"
   },
-  "homepage": "https://github.com/rofrol/scrape#readme"
+  "homepage": "https://github.com/rofrol/scrape#readme",
+  "dependencies": {
+    "isomorphic-fetch": "^2.2.1"
+  }
 }
