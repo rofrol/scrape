@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/rofrol/scrape#readme",
   "dependencies": {
-    "isomorphic-fetch": "^2.2.1"
+    "isomorphic-fetch": "^2.2.1",
+    "pg": "^4.5.1"
   }
 }
