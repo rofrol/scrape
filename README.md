@@ -30,3 +30,15 @@ Showcase what can be done in vanilla.js. Inspired by:
 - http://stackoverflow.com/questions/4253367/how-to-escape-a-json-string-containing-newline-characters-using-javascript
 - JSON does not allow real line-breaks. You need to replace all the line breaks into \n. http://stackoverflow.com/questions/2392766/multiline-strings-in-json
 - https://nodejs.org/docs/v4.2.2/api/http.html
+- installing pg on windows: ok, pg-native: error https://github.com/brianc/node-postgres
+
+## postgresql
+
+Add database in pgadmin.
+Launch psql from windows menu.
+
+```sql
+--- semicolon is needed to run
+insert into scrape values('1231fawer32', 1, 1);
+select * from scrape;
+```
