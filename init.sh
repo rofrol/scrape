@@ -1,1 +1,1 @@
-psql -U $dbuser -d $dbname < init.sql
+psql -U $PGUSER -d $PGDATABASE < init.sql
