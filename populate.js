@@ -5,16 +5,14 @@ var SQL = require('sql-template-strings')
 
 fetch('https://kat.cr/json.php?q=+category:tv&field=seeders&order=desc&page=1').then(response => response.json()).then(data => {
 
-  // console.log(data);
-
   var client = new pg.Client();
+
   client.connect(function(err) {
     if(err) {
       return console.error('could not connect to postgres', err);
     }
     queryCount = 0;
     data.list.forEach(elem => {
-      console.log(elem);
 
       var query = client.query(SQL`
         INSERT
@@ -30,7 +28,7 @@ fetch('https://kat.cr/json.php?q=+category:tv&field=seeders&order=desc&page=1').
         queryCount--;
         console.log("Query ended");
         if (result) {
-           console.log("Added listitem no " + result.rows[0]);
+           console.log("Added");
         }
         if (queryCount === 0) {
          client.end();
