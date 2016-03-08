@@ -5,7 +5,8 @@
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "server": "node server.js"
+    "server": "node server.js",
+    "populate": "node --harmony-rest-parameters populate.js"
   },
   "repository": {
     "type": "git",
@@ -20,6 +21,7 @@
   "dependencies": {
     "envalid": "^0.2.0",
     "isomorphic-fetch": "^2.2.1",
-    "pg": "^4.5.1"
+    "pg": "^4.5.1",
+    "sql-template-strings": "^1.1.2"
   }
 }
