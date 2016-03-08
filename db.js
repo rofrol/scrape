@@ -1,6 +1,7 @@
 var pg = require('pg');
+var conf = require('./config.js');
 
-var client = new pg.Client(`pg://${process.env.DB_USER}@${process.env.DB_HOST}/${process.env.DB_NAME}`);
+var client = new pg.Client(conf.db);
 client.connect(function(err) {
   if(err) {
     return console.error('could not connect to postgres', err);

@@ -4,7 +4,8 @@
   "description": "Showcase what can be done in vanilla.js. Inspired by:\r - https://medium.com/@pistacchio/i-m-a-web-developer-and-i-ve-been-stuck-with-the-simplest-app-for-the-last-10-days-fb5c50917df\r - https://medium.com/@wob/the-sad-state-of-web-development-1603a861d29f\r - https://medium.com/vanilla-javascript/choosing-vanilla-javascript-in-2016-6f38a8302ee5\r - http://www.pocketjavascript.com/blog/2015/11/23/introducing-pokedex-org",
   "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "node --harmony-proxies server.js"
   },
   "repository": {
     "type": "git",
@@ -17,7 +18,11 @@
   },
   "homepage": "https://github.com/rofrol/scrape#readme",
   "dependencies": {
+    "convict": "^1.1.2",
+    "envalid": "^0.2.0",
+    "harmony-proxy": "^1.0.0",
     "isomorphic-fetch": "^2.2.1",
-    "pg": "^4.5.1"
+    "pg": "^4.5.1",
+    "proxy-polyfill": "^0.1.1"
   }
 }
