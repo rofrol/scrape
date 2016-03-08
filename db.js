@@ -1,7 +1,7 @@
+require('./config.js');
 var pg = require('pg');
-var conf = require('./config.js');
 
-var client = new pg.Client(conf.db);
+var client = new pg.Client();
 client.connect(function(err) {
   if(err) {
     return console.error('could not connect to postgres', err);

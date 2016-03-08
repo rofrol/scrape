@@ -1,3 +1,4 @@
+require('./config.js');
 require('isomorphic-fetch');
 
 function getData() {
@@ -16,4 +17,6 @@ http.createServer(function(request, response) {
   getData().then(data => {
     response.end(JSON.stringify(data));
   });
-}).listen(8081);
+}).listen(process.env.SRV_PORT);
+
+console.log('open address http://localhost:' + process.env.SRV_PORT);

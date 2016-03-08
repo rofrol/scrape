@@ -5,7 +5,7 @@
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "server": "node --harmony-proxies server.js"
+    "server": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -18,11 +18,8 @@
   },
   "homepage": "https://github.com/rofrol/scrape#readme",
   "dependencies": {
-    "convict": "^1.1.2",
     "envalid": "^0.2.0",
-    "harmony-proxy": "^1.0.0",
     "isomorphic-fetch": "^2.2.1",
-    "pg": "^4.5.1",
-    "proxy-polyfill": "^0.1.1"
+    "pg": "^4.5.1"
   }
 }
