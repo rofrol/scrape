@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "server": "node server.js",
-    "populate": "node --harmony-rest-parameters populate.js"
+    "populate": "node populate.js"
   },
   "repository": {
     "type": "git",
