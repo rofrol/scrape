@@ -1,8 +1,7 @@
 {
   "name": "scrape",
   "version": "1.0.0",
-  "description": "Showcase what can be done in vanilla.js. Inspired by:\r - https://medium.com/@pistacchio/i-m-a-web-developer-and-i-ve-been-stuck-with-the-simplest-app-for-the-last-10-days-fb5c50917df\r - https://medium.com/@wob/the-sad-state-of-web-development-1603a861d29f\r - https://medium.com/vanilla-javascript/choosing-vanilla-javascript-in-2016-6f38a8302ee5\r - http://www.pocketjavascript.com/blog/2015/11/23/introducing-pokedex-org",
-  "main": "index.html",
+  "description": "Showcase what can be done in vanilla.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "server": "node server.js",
