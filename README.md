@@ -8,6 +8,40 @@ Showcase what can be done in vanilla.js. Inspired by:
 - dotJS 2015 - Henrik Joreteg - Pocket-sized JS https://www.youtube.com/watch?v=okk0BGV9oY0
 - http://nolanlawson.github.io/brooklyn-js-html5-mobile-apps
 
+## Install
+
+Install npm packages:
+
+```
+npm i
+```
+
+Install postgresql then create role and database:
+
+```
+$ psql -U postgres
+postgres=# CREATE ROLE myuser LOGIN password 'mypassword';
+postgres=# CREATE DATABASE mydatabase ENCODING 'UTF8' OWNER myuser;
+```
+
+Create table:
+
+```
+sh init.sh
+```
+
+Populate database with data:
+
+```
+npm run populate
+```
+
+Run server and see result:
+
+```
+npm run server
+```
+
 ## APIs
 
 - https://github.com/Glavin001/node-kickass/issues/3#issuecomment-66647959
