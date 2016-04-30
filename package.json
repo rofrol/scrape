@@ -22,5 +22,6 @@
     "isomorphic-fetch": "^2.2.1",
     "pg": "^4.5.1",
     "sql-template-strings": "^1.1.2"
-  }
+  },
+  "engines" : { "node" : ">=6.0.0" }
 }
