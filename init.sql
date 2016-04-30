@@ -1,4 +1,4 @@
-drop table stats;
+drop table if exists stats;
 create table stats (
   id serial primary key,
   hash varchar not null,
